@@ -1,9 +1,7 @@
-// JS/kho_truyen.js
 document.addEventListener('DOMContentLoaded', () => {
     const khoTruyenList = document.getElementById('kho-truyen-list');
     const savedManga = JSON.parse(localStorage.getItem('khoTruyen')) || [];
 
-    // Function to display saved manga
     function displayManga() {
         khoTruyenList.innerHTML = '';
         savedManga.forEach(manga => {
@@ -30,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     displayManga();
 });
 
-// Function to save manga
 function saveManga(manga) {
     const savedManga = JSON.parse(localStorage.getItem('khoTruyen')) || [];
     savedManga.push(manga);
