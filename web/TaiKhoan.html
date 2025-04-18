@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/styles1.css">
+    <link rel="stylesheet" href="CSS/styles2.css">
+    <link rel="stylesheet" href="CSS/taikhoan.css">
+    <link rel="stylesheet" href="CSS/TabTK.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function dangky1(){
+            alert("Bạn đã đăng ký gói thành viên theo tháng");
+        }
+        function dangky2(){
+            alert("Bạn đã đăng ký gói thành viên theo năm");
+        }
+        function dangky3(){
+            alert("Bạn đã đăng ký gói thành viên vĩnh viễn");
+        }
+    </script>
+
+<div id="wrapper">
+    <header class="header1">
+        <nav class="nav container1">
+           <div class="nav__data">
+              <a href="#" class="nav__logo">
+                 <i class="ri-planet-line"></i> Kurin Manga
+              </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="index.html" class="nav__link">Trang chủ</a></li>
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       <a href="Danhmuc.html">Danh mục</a> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="yuri.html" class="dropdown__link">
+                             Yuri
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="fantasy.html" class="dropdown__link">
+                             Fantasy
+                          </a>
+                       </li>
+                       <li>
+                          <a href="action.html" class="dropdown__link">
+                             Action
+                          </a>
+                       </li>
+                       <li>
+                          <a href="adventure.html" class="dropdown__link">
+                             Adventure
+                          </a>
+                       </li>
+                       <li>
+                          <a href="mecha.html" class="dropdown__link">
+                             </i>Mecha
+                          </a>
+                       </li>
+
+                       
+                    </ul>
+                 </li>
+                 <li><a href="KT.html" class="nav__link">Kho truyện</a></li>
+
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       <a href="canhan.html"> Người dùng</a>
+                       <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="TaiKhoan.html" class="dropdown__link">
+                             <i class="ri-arrow-up-circle-line"></i> Nâng cấp
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="thongtin.html" class="dropdown__link">
+                             <i class="ri-account-box-line"></i> Thông tin
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="Dang.html" class="dropdown__link">
+                             <i class="ri-login-box-line"></i>Đăng nhập
+                          </a>
+                       </li>
+                    </ul>
+                 </li>
+
+              </ul>
+           </div>
+        </nav>
+     </header>
+</div>
+
+    <!-- Tab content -->
+    <div id="special" class="tabcontent"><center>
+      <h1>TÀI KHOẢN CỦA BẠN HIỆN TẠI LÀ TÀI KHOẢN SPECIAL</h1>
+    </center>
+
+    </div>
+    <div id="Pro" class="tabcontent">
+      <center>
+      <h1>TÀI KHOẢN CỦA BẠN HIỆN TẠI LÀ TÀI KHOẢN PRO</h1>
+    </center>
+    </div>
+
+    <div id="legendary" class="tabcontent">
+      <center>
+      <h1>TÀI KHOẢN CỦA BẠN HIỆN TẠI LÀ TÀI KHOẢN LEGENDARY.</h1>
+    </center>
+    </div>
+
+    <div class="wrappers">
+        <div class="card card-0">
+            <div class="glare-containers">
+                <center><h1>Special Account</h1></center>
+                <h2>-KHÔNG QUẢNG CÁO</h2>
+                <h2>-MỞ THÊM 5 TRUYỆN MỖI TuẦN</h2>
+                <div class="glare"></div>
+            </div>
+            <div class="containers">
+                <a href="#" class="button type--A" onclick="dangky1()">
+                    <div class="button__line"></div>
+                    <div class="button__line"></div>
+                    <span class="button__text" onclick="openCity(event, 'special')">ĐĂNG KÝ NGAY</span>
+                    <div class="button__drow1"></div>
+                    <div class="button__drow2"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card card-1">
+            <div class="glare-containers">
+                <center><h1>Pro Account</h1></center>
+                <h2>-KHÔNG QUẢNG CÁO</h2>
+                <h2>-MỞ THÊM 20 TRUYỆN MỖI TuẦN</h2>
+                <h2>-THÊM AVATAR</h2>
+                <div class="glare"></div>
+            </div>
+            <div class="containers">
+                <a href="#" class="button type--B" onclick="dangky2()">
+                    <div class="button__line"></div>
+                    <div class="button__line"></div>
+                    <span class="button__text" onclick="openCity(event, 'Pro')">ĐĂNG KÝ NGAY</span>
+                    <div class="button__drow1"></div>
+                    <div class="button__drow2"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="card card-2">
+            <div class="glare-containers">
+                <center><h1>Legendary Account</h1></center>
+                <h2>-KHÔNG QUẢNG CÁO</h2>
+                <h2>-MỞ TOÀN BỘ TRUYỆN</h2>
+                <h2>-THÊM AVATAR</h2>
+                <h2>-ĐỌC ĐƯỢC TRUYỆN BỊ GIỚI HẠN</h2>
+                <div class="glare"></div>
+            </div>
+            <div class="containers">
+                <a href="#" class="button type--C" onclick="dangky3()">
+                    <div class="button__line"></div>
+                    <div class="button__line"></div>
+                    <span class="button__text" onclick="openCity(event, 'legendary')">ĐĂNG KÝ NGAY</span>
+                    <div class="button__drow1"></div>
+                    <div class="button__drow2"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var limits = 15.0;
+
+        $(".card").mousemove(function (e) {
+            var rect = e.target.getBoundingClientRect();
+            var x = e.clientX - rect.left; // x position within the element.
+            var y = e.clientY - rect.top; // y position within the element.
+            var offsetX = x / rect.width;
+            var offsetY = y / rect.height;
+
+            var rotateY = (offsetX) * (limits * 2) - limits;
+            var rotateX = (offsetY) * (limits * 2) - limits;
+
+            var shadowOffsetX = (offsetX) * 32 - 16;
+            var shadowOffsetY = (offsetY) * 32 - 16;
+
+            $(this).css({
+                "box-shadow": (1 / 6) * -shadowOffsetX + "px " + (1 / 6) * -shadowOffsetY + "px 3px rgba(0, 0, 0, 0.051), " +
+                (2 / 6) * -shadowOffsetX + "px " + (2 / 6) * -shadowOffsetY + "px 7.2px rgba(0, 0, 0, 0.073), " +
+                (3 / 6) * -shadowOffsetX + "px " + (3 / 6) * -shadowOffsetY + "px 13.6px rgba(0, 0, 0, 0.09), " +
+                (4 / 6) * -shadowOffsetX + "px " + (4 / 6) * -shadowOffsetY + "px 24.3px rgba(0, 0, 0, 0.107), " +
+                (5 / 6) * -shadowOffsetX + "px " + (5 / 6) * -shadowOffsetY + "px 45.5px rgba(0, 0, 0, 0.129), " +
+                -shadowOffsetX + "px " + -shadowOffsetY + "px 109px rgba(0, 0, 0, 0.18)",
+                transform: "perspective(1000px) rotateX(" + -rotateX + "deg) rotateY(" + rotateY + "deg)"
+            });
+
+            var glarePos = rotateX + rotateY + 90;
+            $(this)
+                .children()
+                .children()
+                .css("left", glarePos + "%");
+        });
+
+        $(".card").mouseleave(function (e) {
+            $(".card").css({"box-shadow": "0px 0px 3px rgba(0, 0, 0, 0.051), 0px 0px 7.2px rgba(0, 0, 0, 0.073), 0px 0px 13.6px rgba(0, 0, 0, 0.09), 0px 0px 24.3px rgba(0, 0, 0, 0.107), 0px 0px 45.5px rgba(0, 0, 0, 0.129), 0px 0px 109px rgba(0, 0, 0, 0.18)", "transform": "scale(1.0)"});
+            $(".glare").css("left", "100%");
+        });
+
+        function openCity(evt, Name) {
+            var i, tabcontent, button__text;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            button__text = document.getElementsByClassName("button__text");
+            for (i = 0; i < button__text.length; i++) {
+                button__text[i].className = button__text[i].className.replace(" active", "");
+            }
+
+            document.getElementById(Name).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

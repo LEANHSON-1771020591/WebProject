@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/search.css">
+    <link rel="stylesheet" href="CSS/styles1.css">
+    <link rel="stylesheet" href="CSS/styles2.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/tab.css">
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <title>WEBSITE DOC TRUYEN</title>
+</head>
+<body>
+    <script>  function openTag(evt, tagName) {
+            var i, tagcontent, taglinks;
+            tagcontent = document.getElementsByClassName("tagcontent");
+            for (i = 0; i < tagcontent.length; i++) {
+                tagcontent[i].style.display = "none";
+            }
+            taglinks = document.getElementsByClassName("taglinks");
+            for (i = 0; i < taglinks.length; i++) {
+                taglinks[i].className = taglinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tagName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementsByClassName("tagcontent")[0].style.display = "block";
+            document.getElementsByClassName("taglinks")[0].className += " active";
+        });
+    </script>
+
+<div id="wrapper">
+    <header class="header1">
+        <nav class="nav container1">
+           <div class="nav__data">
+              <a href="#" class="nav__logo">
+                 <i class="ri-planet-line"></i> Kurin Manga
+              </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="index.html" class="nav__link">Trang chủ</a></li>
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       <a href="Danhmuc.html">Danh mục</a> <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="yuri.html" class="dropdown__link">
+                             Yuri
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="fantasy.html" class="dropdown__link">
+                             Fantasy
+                          </a>
+                       </li>
+                       <li>
+                          <a href="action.html" class="dropdown__link">
+                             Action
+                          </a>
+                       </li>
+                       <li>
+                          <a href="adventure.html" class="dropdown__link">
+                             Adventure
+                          </a>
+                       </li>
+                       <li>
+                          <a href="mecha.html" class="dropdown__link">
+                             </i>Mecha
+                          </a>
+                       </li>
+
+                       
+                    </ul>
+                 </li>
+                 <li><a href="KT.html" class="nav__link">Kho truyện</a></li>
+
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       <a href="canhan.html"> Người dùng</a>
+                       <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="TaiKhoan.html" class="dropdown__link">
+                             <i class="ri-arrow-up-circle-line"></i> Nâng cấp
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="thongtin.html" class="dropdown__link">
+                             <i class="ri-account-box-line"></i> Thông tin
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="Dang.html" class="dropdown__link">
+                             <i class="ri-login-box-line"></i>Đăng nhập
+                          </a>
+                       </li>
+                    </ul>
+                 </li>
+
+              </ul>
+           </div>
+        </nav>
+     </header>
+</div>
+
+    <div id="wp-content">
+        <div class="headline">
+            <h3>Danh mục</h3>
+        </div>
+        <center>
+            <div class="timkiem">
+                <div class="box">
+                    <form name="search">
+                        <input  id="myInput" type="text"  class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+                    </form>
+                    <i class="fas fa-search"></i>
+                </div>
+                </div>
+                
+        </center>
+        <div class="tags">
+            <center>
+            <button class="taglinks" onclick="openTag(event, 'YURI')">YURI</button>
+            <button class="taglinks" onclick="openTag(event, 'MECHA')">MECHA</button>
+            <button class="taglinks" onclick="openTag(event, 'FANTASY')">FANTASY</button>
+            <button class="taglinks" onclick="openTag(event, 'ADVENTURE')">ADVENTURE</button>
+            <button class="taglinks" onclick="openTag(event, 'ACTION')">ACTION</button>
+        </center>
+        </div>
+
+        <div id="YURI" class="tagcontent">
+            <ul class="manga-list">
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/arknights.jpg" alt="arknights">
+                            </a>
+                            <a href="/Web/arknights0.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Yuri</a>
+                            <a href="" class="manga-name">ARKNIGHTS COMIC ANTHOLOGY</a>
+                            <div class="manga-view">50.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/azur lane.jpg" alt="arknights">
+                            </a>
+                            <a href="/Web/azurlane1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Yuri</a>
+                            <a href="" class="manga-name">AZUR LANE</a>
+                            <div class="manga-view">100.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/magica.jpg" alt="arknights">
+                            </a>
+                            <a href="/Web/madoka1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Yuri</a>
+                            <a href="" class="manga-name">PUELLA MAGI MADOKA MAGICA</a>
+                            <div class="manga-view">200.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="/Web//Web/girlfronline1.html" class="manga-thumb">
+                                <img src="Anh/Manga/girl fronline.png" alt="arknights">
+                            </a>
+                            <a href="/Web/girlfronline1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Yuri</a>
+                            <a href="" class="manga-name">GIRL FRONLINE</a>
+                            <div class="manga-view">100.000 View</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="MECHA" class="tagcontent">
+            <ul class="manga-list">
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/darling.jpg" alt="arknights">
+                            </a>
+                            <a href="/web/darling1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Mecha</a>
+                            <a href="" class="manga-name">DARLING IN THE FRANXX</a>
+                            <div class="manga-view">500.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/86.jpg" alt="arknights">
+                            </a>
+                            <a href="/web/86-1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Mecha</a>
+                            <a href="" class="manga-name">EIGHTY-SIX</a>
+                            <div class="manga-view">400.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/evang.jpg" alt="arknights">
+                            </a>
+                            <a href="/web/86-1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Mecha</a>
+                            <a href="" class="manga-name">EVANGELION</a>
+                            <div class="manga-view">2.500.000 View</div>
+                        </div>
+                    </div>
+                </li>   
+            </ul>
+        </div>
+        
+        <div id="FANTASY" class="tagcontent">
+            <ul class="manga-list">
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/smileW.webp" alt="arknights">
+                            </a>
+                            <a href="/web/smile1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Fantasy</a>
+                            <a href="" class="manga-name">TÔI CHUYỂN SINH THÀNH SMILE</a>
+                            <div class="manga-view">1.000.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/thanhguom.jpg" alt="arknights">
+                            </a>
+                            <a href="/web/demon1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Fantasy</a>
+                            <a href="" class="manga-name">THANH GƯƠM DIỆT QUỶ</a>
+                            <div class="manga-view">2.000.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/black.jpeg" alt="arknights">
+                            </a>
+                            <a href="/web/black1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Fantasy</a>
+                            <a href="" class="manga-name">BLACK CLOVER</a>
+                            <div class="manga-view">100.000 View</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="ADVENTURE" class="tagcontent">
+            <ul class="manga-list">
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/knight.jpg" alt="arknights">
+                            </a>
+                            <a href="/web/hiepsi1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Adventure</a>
+                            <a href="" class="manga-name">KHÔ CỐT HIỆP SĨ</a>
+                            <div class="manga-view">100.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/yugioh.jpg" alt="arknights">
+                            </a>
+                            <a href="/web/vuatrochoi1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Adventure</a>
+                            <a href="" class="manga-name">VUA TRÒ CHƠI</a>
+                            <div class="manga-view">800.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/hero.jpg" alt="arknights">
+                            </a>
+                            <a href="/Web/anhhung1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Adventure</a>
+                            <a href="" class="manga-name">hỌC VIỆN ANH HÙNG</a>
+                            <div class="manga-view">2.000.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/friren.jpg" alt="arknights">
+                            </a>
+                            <a href="/Web/frieren1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Adventure</a>
+                            <a href="" class="manga-name">SOUSOU NO FRIEREN</a>
+                            <div class="manga-view">10.000.000 View</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="ACTION" class="tagcontent">
+            <ul class="manga-list">
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/one punch.jpg" alt="arknights">
+                            </a>
+                            <a href="/Web/onepunch1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Action</a>
+                            <a href="" class="manga-name">ONE PUNCH MAN</a>
+                            <div class="manga-view">3.100.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/chuthuat.jpg" alt="arknights">
+                            </a>
+                            <a href="/Web/chuthuat1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Action</a>
+                            <a href="" class="manga-name">CHÚT THUẬT HỒI CHIẾN</a>
+                            <div class="manga-view">4.000.000 View</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="manga-item">
+                        <div class="manga-top">
+                            <a href="" class="manga-thumb">
+                                <img src="Anh/Manga/mashle.jpg" alt="arknights">
+                            </a>
+                            <a href="/Web/mashle1.html" class="read-now">Đọc Ngay</a>
+                        </div>
+                        <div class="manga-info">
+                            <a href="" class="manga-cat">Action</a>
+                            <a href="" class="manga-name">MASHLE</a>
+                            <div class="manga-view">100.000 View</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="caichan">
+            <div class="footer-content">
+                <h3>Liên hệ tôi</h3>
+                <p class="chuhong">Email: anhson2972005@gmail.com</p>
+                <p class="chuhong">Số điện thoại: 0772365592</p>
+                <p class="chuhong">Địa chỉ: Trái đất</p>
+            </div>
+            <div class="footer-content">
+                <h3>Follow Us</h3>
+                <h3>ĐỊA CHỈ GMAIL: anhson2972005@gmail.com</h3><br>
+                <a href="https://www.facebook.com/profile.php?id=100040657272500&locale=vi_VN"><h3>trang chủ facebook</h3></a>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>Website đọc truyện - Bản quyền của Lê Anh Sơn đẹp trai</p>
+        </div>
+    </footer>
+</body>
+<script>
+    $(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".manga-list li .manga-item ").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</html>

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+
+#background {
+    padding-top: 90px;
+    background-color: #393e46;
+}
+
+#background img{
+    height: auto;
+    width: 1000px;
+    border-radius: 0px 0px 10px  10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#wp-content{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+body{
+    font-family: "Madimi One", sans-serif;
+    font-size: 14px;
+    color: #111;
+    line-height: 1.15;
+}
+
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+h3{
+    font-size: 18px;
+    color: #f3808f;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    font-weight: 600;
+}
+
+ul.manga-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.manga-list li{
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.manga-list li img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul.manga-list li .manga-top{
+    position: relative;
+    overflow: hidden;
+}
+
+ul.manga-list li .manga-top .manga-thumb{
+    display: block;
+}
+
+ul.manga-list li:hover .manga-top .manga-thumb img{
+    filter: opacity(80%);
+}
+
+
+ul.manga-list li .manga-top .manga-thumb img{
+    display: block;
+}
+
+ul.manga-list li .manga-top a.read-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #f3808f;
+    color: white;
+    padding: 10px 0px;
+    position: absolute;
+    bottom: -36px;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+
+ul.manga-list li:hover a.read-now{
+    bottom: 0px;
+}
+
+ul.manga-list li .manga-info{
+    padding: 15px 0px;
+}
+
+
+ul.manga-list li .manga-info a{
+    display: block;
+    text-decoration: none;
+}
+
+ul.manga-list li .manga-info a.manga-cat{
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9e9e9e;
+    padding: 3px 0px;
+}
+
+ul.manga-list li .manga-info a.manga-name{
+    color: #f3808f;
+    padding: 3px 0px;
+}
+
+ul.manga-list li .manga-info .manga-view{ 
+    padding: 2px 0px;
+    font-weight: 600;
+}
